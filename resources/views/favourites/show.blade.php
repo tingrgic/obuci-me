@@ -10,5 +10,6 @@
     </ul>
 
     <a href="{{ route('favourites.index') }}">Back</a> 
+    
     </div>
 @endsection
