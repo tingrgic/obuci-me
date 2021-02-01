@@ -20,6 +20,8 @@ class UserSeeder extends Seeder
     {
         DB::table('users')->insert([
             ['name' => 'Tin', 'email' => 'tinovaAplikacija@gmail.com', 'password' => 'mojaSifra', 'outfit_id' => '1', 'role_id' => '1'],
+            ['name' => 'Davor', 'email' => 'DAvorovaAplikacija@gmail.com', 'password' => 'DavorovaSifra', 'outfit_id' => '1', 'role_id' => '1'],
+            ['name' => 'Andrej', 'email' => 'AndrejevaAplikacija@gmail.com', 'password' => 'AndrejevaSifra', 'outfit_id' => '1', 'role_id' => '1']
         ]);
     }
 }

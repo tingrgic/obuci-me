@@ -18,8 +18,8 @@ class ShoeSeeder extends Seeder
     {
         DB::table('shoes')->insert([
             ['manufacturer' => 'Nike', 'model_name' => 'Blazer', 'colour' => 'Bijela','size' => '46',],
-            ['manufacturer' => 'Converse', 'model_name' => 'All-Star', 'colour' => 'Crne','size' => 'L',],
-            ['manufacturer' => 'C&A', 'model_name' => 'Duga Majica', 'colour' => 'Plava','size' => 'XL',]
+            ['manufacturer' => 'Converse', 'model_name' => 'All-Star', 'colour' => 'Crne','size' => '37',],
+            ['manufacturer' => 'Timberland', 'model_name' => 'Cizma', 'colour' => 'Plava','size' => '42',]
         ]);
     }
 }
