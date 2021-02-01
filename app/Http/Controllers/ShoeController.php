@@ -48,7 +48,7 @@ class ShoeController extends Controller
     public function show($id)
     {
         $shoe = Shoe::findOrFail($id);
-        dd($shoe);
+        return view('shoes.show', compact('shoe'));
     }
 
     /**

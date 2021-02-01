@@ -2,7 +2,8 @@
 
 
 @section('content')
-  <table class="table table-striped">
+<a href="{{route('pants.create')}}" class="btn btn-primary mt-5">Add</a>
+  <table class="table table-striped mt-3">
     <thead>
       <tr>
         <th scope="col">Id</th>
@@ -10,6 +11,7 @@
         <th scope="col">Model Name</th>
         <th scope="col">Colour</th>
         <th scope="col">Size</th>
+        <th>Actions</th>
 
       </tr>
     </thead>
@@ -21,6 +23,11 @@
             <td>{{ $pant->model_name }}</td>
             <td>{{ $pant->colour }}</td>
             <td>{{ $pant->size }}</td>
+            <td>
+              <a class="btn btn-outline-primary" href="{{ route('pants.show', ['pants' => $pant->id])}}">Details</a>
+              <a class="btn btn-outline-primary" href="{{ route('pants.edit', ['pants' => $pant->id])}}">Edit</a>
+
+            </td>
           </tr>
       @endforeach
     </tbody>

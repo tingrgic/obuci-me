@@ -22,25 +22,25 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/users">Users</a>
+        <a class="nav-link" href="{{ route('users.index')}}">Users</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/shoes">Shoes</a>
+        <a class="nav-link" href="{{ route('shoes.index')}}">Shoes</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/shirts">Shirts</a>
+        <a class="nav-link" href="{{ route('shirts.index')}}">Shirts</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/pants">Pants</a>
+        <a class="nav-link" href="{{ route('pants.index')}}">Pants</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/jackets">Jackets</a>
+        <a class="nav-link" href="{{ route('jackets.index')}}">Jackets</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/outfits">Outfits</a>
+        <a class="nav-link" href="{{ route('outfits.index')}}">Outfits</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/favourites">Favourites</a>
+        <a class="nav-link" href="{{ route('favourites.index')}}">Favourites</a>
       </li>
     </ul>
   </div>

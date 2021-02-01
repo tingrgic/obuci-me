@@ -48,7 +48,7 @@ class JacketController extends Controller
     public function show($id)
     {
         $jacket = Jacket::findOrFail($id);
-        dd($jacket);
+        return view('jackets.show', compact('jacket'));
     }
 
     /**

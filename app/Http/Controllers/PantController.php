@@ -48,7 +48,7 @@ class PantController extends Controller
     public function show($id)
     {
         $pant = Pant::findOrFail($id);
-        dd($pant);
+        return view('pants.show', compact('pant'));
     }
 
     /**

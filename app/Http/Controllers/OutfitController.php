@@ -48,7 +48,7 @@ class OutfitController extends Controller
     public function show($id)
     {
         $outfit = Outfit::findOrFail($id);
-        dd($outfit);
+        return view('outfits.show', compact('outfit'));
     }
 
     /**

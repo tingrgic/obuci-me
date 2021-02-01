@@ -48,7 +48,7 @@ class FavouriteController extends Controller
     public function show($id)
     {
         $favourite = Favourite::findOrFail($id);
-        dd($favourite);
+        return view('favourites.show', compact('favourite'));
     }
 
     /**

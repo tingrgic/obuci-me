@@ -48,7 +48,7 @@ class ShirtController extends Controller
     public function show($id)
     {
         $shirt = Shirt::findOrFail($id);
-        dd($shirt);
+        return view('shirts.show', compact('shirt'));
     }
 
     /**
