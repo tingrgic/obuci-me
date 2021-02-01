@@ -15,11 +15,8 @@ class CreatePersonalFavouritesTable extends Migration
     {
         Schema::create('personal_favourites', function (Blueprint $table) {
             $table->id();
-
             $table->foreignId('outfit_id')->constrained();
             $table->foreignId('user_id')->constrained();
-            $table->dateTime('made_on');
-            
             $table->timestamps();
         });
     }

@@ -17,11 +17,11 @@ class CreateOutfitsTable extends Migration
             $table->id();
             $table->string('name', 255);
             $table->string('season',255);
-            $table->timestamps();
             $table->foreignId('shirt_id')->constrained();
             $table->foreignId('shoe_id')->constrained();
             $table->foreignId('jacket_id')->constrained();
             $table->foreignId('pant_id')->constrained();
+            $table->timestamps();
         });
     }
 

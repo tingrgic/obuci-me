@@ -19,7 +19,7 @@ class JacketSeeder extends Seeder
     public function run()
     {
         DB::table('jackets')->insert([
-            ['manufacturer' => 'Diesel', 'model_name' => 'Jakna model no1', 'colour' => 'Smeđa','size' => 'XL',],
+            ['manufacturer' => 'Diesel', 'model_name' => 'Jakna model no1', 'colour' => 'Smeđa','size' => 'XL'],
             ['manufacturer' => 'Borovo', 'model_name' => 'Šuškavac', 'colour' => 'Crna','size' => 'XXL',],
             ['manufacturer' => 'Versace', 'model_name' => 'Kaput', 'colour' => 'Crveni','size' => 'L',]
             ]);

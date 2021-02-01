@@ -19,7 +19,10 @@ class DatabaseSeeder extends Seeder
             PantSeeder::class,
             ShirtSeeder::class,
             ShoeSeeder::class,
-            OutfitSeeder::class
+            OutfitSeeder::class,
+            FavouritesSeeder::class,
+            UserSeeder::class,
+            Personal_FavouritesSeeder::class
         ]);
     }
 }
